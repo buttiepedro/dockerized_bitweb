@@ -13,7 +13,7 @@ def create_app():
 
     mail = Mail(app)
 
-    locale.setlocale(locale.LC_ALL, 'es_ES')
+    locale.setlocale(locale.LC_ALL, 'es_ES.UTF-8')
 
     #Pagina principal
     @app.route('/')
