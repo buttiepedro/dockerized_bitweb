@@ -5,6 +5,3 @@ services:
     build: ./web
     ports:
       - "80:5000"
-
-volumes:
-  default:
