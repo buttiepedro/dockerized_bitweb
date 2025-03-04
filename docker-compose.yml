@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+
+  web:
+    build: ./web
+    ports:
+      - "80:5000"
+    environment:
+      - SQLALCHEMY_DATABASE_URI=postgresql://postgres:P3drobutt1e$$@postgres:5432/bit_videoanalisis
+    depends_on:
+      postgres:
+        condition: service_healthy    
+    links: 
+        - postgres
+
+
+volumes:
+  postgres_data:

@@ -1,10 +1,7 @@
 
 class Config:
-    DEBUG = True
-    SECRET_KEY = 'dev'
-
-    #Database config
-    SQLALCHEMY_DATABASE_URI = "postgresql+psycopg2://postgres:P3drobutt1e$@localhost:5432/bit_videoanalisis"
+    DEBUG = False
+    SECRET_KEY = 'asdasdqwerty'
 
     #CKEditor para ingresar texto
     CKEDITOR_PKG_TYPE = 'standard'
@@ -15,7 +12,7 @@ class Config:
     MAIL_PORT = 587
     MAIL_USE_TLS = True
     MAIL_USE_SSL = False
-    MAIL_USERNAME = 'buttiepedro.bit@gmail.com'  # Reemplaza con tu email
-    MAIL_PASSWORD = 'nqxz qssp dqdm mwqw'  # Reemplaza con tu contraseña
+    MAIL_USERNAME = 'buttiepedro.bit@gmail.com' 
+    MAIL_PASSWORD = 'nqxz qssp dqdm mwqw' 
     
     
