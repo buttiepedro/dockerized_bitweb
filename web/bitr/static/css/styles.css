@@ -1,0 +1,385 @@
+/* Colores Principales */
+:root {
+    --color-primary: #01052D; /* Azul oscuro profundo */
+    --color-secondary: #01052D; /* Azul oscuro más claro */
+    --color-accent: #1B88F3; /* Violeta brillante */
+    --color-dark: #01052D; /* Gris azulado oscuro */
+    --color-light: #c6c6c6cd; /* Gris claro */
+    --color-white: #fffffff1; /* Blanco */
+}
+
+
+body {
+    background-image: url('../img/fondo.jpg'); /* Ruta de tu imagen */
+    background-size: cover; /* Ajusta la imagen al tamaño del viewport */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Fija la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: var(--color-light);
+    font-family: Arial, sans-serif;
+}
+
+/* Barra de Navegación */
+.navbar {
+    background-color: var(--color-primary) !important;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-scrolled {
+    background-color: rgba(26, 26, 43, 0.9) !important; /* Azul oscuro con transparencia */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+}
+
+.navbar-brand, .nav-link {
+    color: var(--color-light) !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--color-accent) !important;
+}
+
+/* Hero Section */
+.hero {
+    margin-top: -30px;
+    color: var(--color-light);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    animation: fadeInUp 1s ease forwards;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1.2s ease forwards;
+}
+
+.hero .btn-hero {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 12px 24px;
+    border-radius: 5px;
+    margin-top: 400px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeInUp 1.4s ease forwards;
+}
+
+.hero .btn-hero:hover {
+    background-color: #01052D; /* Violeta oscuro */
+    transform: translateY(-5px);
+}
+
+.contact {
+    background-color: var(--color-primary); /* Cambia el color según tu preferencia */
+}
+
+.contact_main {
+    min-height: 100vh; /* Hace que el contenedor ocupe al menos el 100% de la altura de la pantalla */
+    margin-bottom: 0;
+}
+
+
+/* Tarjetas de Servicios */
+.services .card {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.services .btn-card {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.services .btn-card:hover {
+    background-color: #6648EA; /* Violeta oscuro */
+    transform: translateY(-5px);
+}
+
+/* Sobre Nosotros */
+.about {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    padding: 80px 0;
+}
+
+.about .btn-about {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.about .btn-about:hover {
+    background-color: #6648EA; /* Violeta oscuro */
+    transform: translateY(-5px);
+}
+
+/* Testimonios */
+.testimonials .card {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonials .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Pie de Página */
+footer {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-dark));
+    color: var(--color-light);
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+footer .footer-link {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .footer-link:hover {
+    color: var(--color-light);
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero, .services, .about, .testimonials {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.hero {
+    animation-delay: 0.2s;
+}
+
+.services {
+    animation-delay: 0.4s;
+}
+
+.about {
+    animation-delay: 0.6s;
+}
+
+.testimonials {
+    animation-delay: 0.8s;
+}
+
+/* Estilos para la página de servicios */
+.services-detail {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    padding: 80px 0;
+}
+
+.services-detail .card {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-detail .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.services-detail .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.services-detail .card-body {
+    padding: 20px;
+}
+
+.services-detail .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--color-light);
+}
+
+.services-detail .card-text {
+    font-size: 1rem;
+    color: var(--color-light);
+}
+
+.services-detail ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.services-detail ul li {
+    margin-bottom: 10px;
+    color: var(--color-light);
+}
+
+.services-detail .btn-primary {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.services-detail .btn-primary:hover {
+    background-color: #4B3F72; /* Violeta oscuro */
+    transform: translateY(-5px);
+}
+
+/* Estilos para la página Sobre Nosotros */
+.about-us {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    padding: 80px 0;
+}
+
+.about-us h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: var(--color-light);
+}
+
+.about-us h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--color-light);
+}
+
+.about-us p {
+    font-size: 1.1rem;
+    color: var(--color-light);
+    line-height: 1.8;
+}
+
+.about-us .card {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-us .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.about-us .card-body {
+    padding: 20px;
+}
+
+.about-us .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--color-light);
+}
+
+.about-us .card-text {
+    font-size: 1rem;
+    color: var(--color-light);
+}
+
+.about-us ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.about-us ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: var(--color-light);
+}
+
+/* Estilos para el Carrusel de Logos */
+.clients {
+    background-color: var(--color-dark);
+    padding: 80px 0;
+}
+
+.clients h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: var(--color-light);
+    text-align: center;
+}
+
+.carousel-item {
+    padding: 20px 0;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(100%); /* Opcional: Convierte los logos a escala de grises */
+    transition: filter 0.3s ease;
+}
+
+.carousel-item img:hover {
+    filter: grayscale(0%); /* Opcional: Restaura el color al hacer hover */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--color-accent);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.carousel-indicators button {
+    background-color: var(--color-accent);
+}
+
+/* Estilos para bordes redondeados personalizados */
+.carousel-item img.rounded {
+    border-radius: 10px; /* Ajusta el valor según tus preferencias */
+}

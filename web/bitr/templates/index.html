@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="hero text-center py-5">
+    <div class="container">
+        <h1 class="display-4">Transformamos tu empresa con Automatización e Inteligencia Artificial</h1>
+        <p class="lead">Soluciones innovadoras para optimizar el desempeño de tu empresa.</p>
+        <a href="contacto" class="btn btn-hero">Contáctanos</a>
+    </div>
+</section>
+
+<section class="services py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Algunos de Nuestros Servicios</h2>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title">Automatización de Facturación</h3>
+                        <p class="card-text">Simplificamos la facturación con transcripción automática de tus facturas a hojas de calculo.</p>
+                        <a href="servicios" class="btn btn-card">Más información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title">Automatización de Informes</h3>
+                        <p class="card-text">Optimizamos tus hojas de calculo para crear informes interactivos que se actualizan automáticamente sin alterar tu flujo de trabajo.</p>
+                        <a href="servicios" class="btn btn-card">Más información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title">Chatbot con IA</h3>
+                        <p class="card-text">Brinda una atención al cliente rápida y eficiente con inteligencia artificial.</p>
+                        <a href="servicios" class="btn btn-card">Más información</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="about py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Sobre Nosotros</h2>
+                <p>Somos una empresa especializada en desarrollo y asesoramiento tecnológico, enfocada en ofrecer soluciones de automatización e inteligencia artificial para mejorar la eficiencia de tu negocio.</p>
+                <a href="nosotros" class="btn btn-about">Conoce más</a>
+            </div>
+            <div class="col-md-6">
+                <img src="../static/img/logo_letras.png" alt="Sobre Nosotros" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="clients py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Nuestros Clientes</h2>
+        <div id="clientCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#clientCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#clientCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#clientCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 text-center">
+                            <img src="../static/img/logos/la_celeste.jpg" alt="La Celeste" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <img src="../static/img/logos/newsport.png" alt="Newsport" class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 text-center">
+                            <img src="../static/img/logos/la_celeste.jpg" alt="La Celeste" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <img src="../static/img/logos/newsport.png" alt="Newsport" class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#clientCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#clientCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+</section>
+{% endblock %}
