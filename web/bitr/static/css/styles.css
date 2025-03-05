@@ -4,17 +4,18 @@
     --color-secondary: #01052D; /* Azul oscuro más claro */
     --color-accent: #1B88F3; /* Violeta brillante */
     --color-dark: #01052D; /* Gris azulado oscuro */
-    --color-light: #c6c6c6cd; /* Gris claro */
+    --color-light: #ffffffcd; /* Gris claro */
     --color-white: #fffffff1; /* Blanco */
 }
 
 
 body {
-    background-image: url('../img/fondo.jpg'); /* Ruta de tu imagen */
-    background-size: cover; /* Ajusta la imagen al tamaño del viewport */
-    background-position: center; /* Centra la imagen */
-    background-attachment: fixed; /* Fija la imagen de fondo */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-image: url('../img/fondo.png'); /* Ruta de tu imagen */
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #585858;
+    background-attachment: fixed; /* Hace que la imagen de fondo permanezca fija al hacer scroll */
     color: var(--color-light);
     font-family: Arial, sans-serif;
 }
