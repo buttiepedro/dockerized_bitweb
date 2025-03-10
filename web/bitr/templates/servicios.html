@@ -6,23 +6,6 @@
     <div class="container">
         <h2 class="text-center mb-5">Nuestros Servicios</h2>
         <div class="row">
-            <div class="col-md-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h3 class="card-title">Automatización de Facturación</h3>
-                        <p class="card-text">
-                            Simplificamos la facturación con transcripción automática de tus facturas a hojas de cálculo.
-                            Nuestro sistema permite:
-                        </p>
-                        <ul>
-                            <li>Extracción automática de datos de facturas.</li>
-                            <li>Integración con sistemas contables.</li>
-                            <li>Generación de reportes en tiempo real.</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary">Más Información</a>
-                    </div>
-                </div>
-            </div>
 
             <div class="col-md-6 mb-4">
                 <div class="card h-100">
@@ -37,7 +20,7 @@
                             <li>Actualización en tiempo real sin intervención manual.</li>
                             <li>Visualización de datos en gráficos interactivos.</li>
                         </ul>
-                        <a href="#" class="btn btn-primary">Más Información</a>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#informesmodal">Más Información</button>
                     </div>
                 </div>
             </div>
@@ -54,7 +37,7 @@
                             <li>Integración con WhatsApp, Facebook Messenger y más.</li>
                             <li>Análisis de conversaciones para mejorar el servicio.</li>
                         </ul>
-                        <a href="#" class="btn btn-primary">Más Información</a>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#chatmodal">Más Información</button>
                     </div>
                 </div>
             </div>
@@ -71,11 +54,56 @@
                             <li>Dashboards interactivos.</li>
                             <li>Integración con múltiples fuentes de datos.</li>
                         </ul>
-                        <a href="#" class="btn btn-primary">Más Información</a>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#analisismodal">Más Información</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+
+<div class="modal fade" id="informesmodal" tabindex="-1" aria-labelledby="informesmodallabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="informesmodallabel">Informes Automaticos</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="../static/img/modals/facturacion.jpg" class="img-fluid mb-3" alt="Informes Automaticos">
+                <p>Extracción automática de datos, integración con sistemas contables y reportes en tiempo real.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="chatmodal" tabindex="-1" aria-labelledby="chatmodallabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="chatmodallabel">Chatbot con Inteligencia Artificial</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="../static/img/modals/facturacion.jpg" class="img-fluid mb-3" alt="Chatbot">
+                <p>Extracción automática de datos, integración con sistemas contables y reportes en tiempo real.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="analisismodal" tabindex="-1" aria-labelledby="analisismodallabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="analisismodallabel">Analisis de Datos</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="../static/img/modals/facturacion.jpg" class="img-fluid mb-3" alt="Analisis de Datos">
+                <p>Extracción automática de datos, integración con sistemas contables y reportes en tiempo real.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock %}

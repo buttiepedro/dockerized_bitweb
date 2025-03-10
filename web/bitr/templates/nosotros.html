@@ -24,7 +24,55 @@
 
         <div class="row mb-5 justify-content-center">
             <div class="col-md-6 text-center">
-                <div class="card h-100">
+                <div class="card h-100">{% extends "base.html" %}
+
+                    {% block content %}
+                    
+                    <section class="about-us py-5">
+                        <div class="container">
+                            <h2 class="text-center mb-5">Sobre Nosotros</h2>
+                    
+                            <div class="row mb-5">
+                                <div class="col-md-6">
+                                    <h3>¿Quiénes Somos?</h3>
+                                    <p>
+                                        Somos <strong>BIT - Business Intelligence Tech</strong>, una empresa especializada en desarrollo y asesoramiento tecnológico.
+                                        Nos enfocamos en ofrecer soluciones de automatización e inteligencia artificial para mejorar la eficiencia de tu negocio.
+                                    </p>
+                                    <p>
+                                       Ayudamos a las empresas a transformar sus procesos y mejorar su acceso a la informacion para poder asi tomar decisiones estrategicas basadas en datos.
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="../static/img/logo_letras.png" alt="Quiénes Somos" class="img-fluid rounded">
+                                </div>
+                            </div>
+                    
+                            <div class="row mb-5 justify-content-center">
+                                <div class="col-md-6 text-center">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Misión</h3>
+                                            <p class="card-text">
+                                                Transformar empresas en organizaciones altamente eficientes y competitivas mediante la implementación de soluciones innovadoras de adquisición y análisis de datos. Nos dedicamos a estandarizar y optimizar procesos productivos, reduciendo tiempos de ejecución y minimizando errores, a través de la automatización de procesos rutinarios y la aplicación de metodologías ágiles como Scrum. Proveemos herramientas de Business Intelligence (BI) con ETL totalmente automatizado, asegurando un flujo continuo y preciso de información que impulsa la toma de decisiones estratégicas.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Visión</h3>
+                                            <p class="card-text">
+                                                Ser líderes en la creación de ecosistemas empresariales inteligentes y eficientes, donde la estandarización y la optimización de procesos sean la norma. Aspiramos a ser reconocidos como la empresa de referencia en la implementación de soluciones de BI y automatización de procesos, transformando la manera en que las empresas operan y crecen. Nos comprometemos a mantener una cultura de mejora continua y adaptabilidad, siempre enfocados en proporcionar valor agregado y resultados tangibles para nuestros clientes.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    {% endblock %}
                     <div class="card-body">
                         <h3 class="card-title">Misión</h3>
                         <p class="card-text">
